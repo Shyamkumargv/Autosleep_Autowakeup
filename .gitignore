@@ -1,0 +1,12 @@
+### Node/npm ###
+server/node_modules/
+server/package-lock.json
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+*.log
+
+concourse/config.yml

@@ -1,0 +1,27 @@
+---
+applications:
+- name: AutoSleep-Wakeup
+  memory: 256M
+  instances: 1
+  disk-quota: 256M
+  random-route: false
+  health-check-type: process
+  command: npm start
+  buildpack: nodejs_buildpack
+  path: server
+  env:
+ #   NEW_RELIC_APP_NAME: telemetry-performance-test-sandbox
+    #tcpHost: 'uls.eas.preview.manulife.io',            //load balancer
+    #tcpHost: 'uls.na.preview.manulife.io',            //load balancer
+    #tcpHost: 'uls.manulife.io',            //load balancer
+#    tcpHost: 'uls.eas.manulife.io'
+#    key: './tls/uls.eas.manulife.io.key'
+#    cert: './tls/uls_eas_manulife_io_cert.cer'
+#    tcpPort: 522
+#    secured: true
+#    isprod: true
+ #   AUTH: Basic bG9nc3Rhc2g6c0BuZGIweDFudGFrMw==
+ # services:
+ #   - telemetry-metrics-newrelic
+ #   - telemetry-metrics-mongodb
+    
